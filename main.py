@@ -2,11 +2,12 @@
 """
 A simple app to create a JWT token.
 """
-import os
-import logging
-import datetime
 import functools
+import datetime
 import jwt
+import logging
+import os
+
 
 # pylint: disable=import-error
 from flask import Flask, jsonify, request, abort
