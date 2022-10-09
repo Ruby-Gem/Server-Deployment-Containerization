@@ -22,6 +22,8 @@ The app relies on a secret set as the environment variable `JWT_SECRET` to produ
 * AWS Account
 * Python version between 3.7 and 3.9. Check the current version using:
 ```bash
+
+
 #  Mac/Linux/Windows 
 python --version
 ```
