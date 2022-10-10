@@ -4,9 +4,9 @@ A simple app to create a JWT token.
 """
 import functools
 import datetime
-import jwt
 import logging
 import os
+import jwt
 
 
 # pylint: disable=import-error

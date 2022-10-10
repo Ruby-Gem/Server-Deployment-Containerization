@@ -1,14 +1,14 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: simple-flask-deployment
+  name: simple-jwt-api-deployment
   labels:
-    app: simple-flask
+    app: simple-jwt-api
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: simple-flask
+      app: simple-jwt-api
   strategy:
     type: RollingUpdate
     rollingUpdate:
@@ -17,12 +17,11 @@ spec:
   template:
     metadata:
       labels:
-        app: simple-flask
+        app: simple-jwt-api
     spec:
       containers:
-      - name: simple-flask
-        # image: IMAGE_TAG
-        image: sudkul/simple-flask
+      - name: simple-jwt-api
+        image: sunday0prime/simple-jwt-api
         securityContext:
           privileged: false
           readOnlyRootFilesystem: false
